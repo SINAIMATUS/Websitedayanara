@@ -149,3 +149,49 @@ footer.page-footer.teal {
 .parallax img[src="Picture 4.jpg"] {
   filter: contrast(0.96) brightness(0.75);
 }
+
+/* ----------------------- */
+/* Responsive: móviles     */
+/* ----------------------- */
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    min-height: 340px;
+  }
+
+  #index-banner h1.header {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  #index-banner h5.header {
+    font-size: 1.6rem;
+  }
+
+  /* Botón centrado en móvil y con tamaño ligeramente menor */
+  #download-button {
+    position: static;
+    transform: none;
+    display: inline-flex;
+    margin: 1.2rem auto 0;
+    padding: 1rem 2.2rem;
+    font-size: 1.2rem;
+    border-radius: 1.6rem;
+    z-index: 3;
+  }
+  /* Simplificar la silueta de nube en móvil para evitar desbordes */
+  #download-button::before,
+  #download-button::after {
+    display: none;
+  }
+
+  /* Asegurar que el contenido del hero quede encima y no se corte */
+  #index-banner .section {
+    position: relative;
+    top: 0;
+    z-index: 2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #index-banner .section br {
+    display: none;
+  }
+}
