@@ -83,7 +83,7 @@ footer.page-footer.teal {
   position: absolute;
   right: 4rem;
   top: 50%;
-  transform: translate(100%, -50%);
+  transform: translate(50%, -50%);
   padding: 1.15rem 2.6rem; /* un poco más grande */
   font-size: 1.4rem;
   border-radius: 1.8rem; /* menos circular, base más elíptica */
