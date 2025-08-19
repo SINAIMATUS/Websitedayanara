@@ -1,0 +1,151 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #a00a82;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #7d0101;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* Footer con fondo basado en Picture 4 y degradado para combinar colores */
+footer.page-footer.teal {
+  background:
+    linear-gradient(to right, rgba(194, 24, 91, 0.85), rgba(13, 71, 161, 0.80)),
+    url('../Picture 4.jpg') center/cover no-repeat !important;
+  background-blend-mode: multiply;
+}
+
+/* Botón principal: rosa fucsia oscuro */
+#download-button {
+  background-color: #c2185b !important; /* dark fuchsia pink */
+  color: #ffffff !important;
+}
+#download-button:hover,
+#download-button:focus {
+  background-color: #880e4f !important;
+  color: #ffffff !important;
+}
+
+/* Botón: tamaño mayor, forma de nube y posición a la derecha del hero */
+#index-banner .container {
+  position: relative;
+}
+#download-button {
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  transform: translate(200%, -50%);
+  padding: 1.15rem 2.6rem; /* un poco más grande */
+  font-size: 1.4rem;
+  border-radius: 1.8rem; /* menos circular, base más elíptica */
+  box-shadow: 0 10px 24px rgba(90, 0, 31, 0.45); /* vino oscuro */
+  filter: drop-shadow(0 4px 10px rgba(90, 0, 31, 0.5));
+  display: inline-flex; /* centrar contenido */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  font-family: 'Dancing Script', cursive;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.1;
+}
+#download-button::before,
+#download-button::after {
+  content: "";
+  position: absolute;
+  background-color: #c2185b; /* igual al fondo del botón */
+  border-radius: 50%;
+  pointer-events: none;
+}
+/* lóbulos superiores de la nube (más marcados y menos circulares) */
+#download-button::before {
+  width: 34px;
+  height: 34px;
+  top: -20px;
+  left: 12px;
+  box-shadow:
+    26px 4px 0 0 #c2185b,
+    52px -6px 0 0 #c2185b;
+}
+/* lóbulo lateral para completar la silueta */
+#download-button::after {
+  width: 28px;
+  height: 28px;
+  top: -14px;
+  right: 18px;
+  box-shadow:
+    -26px 6px 0 0 #c2185b;
+}
+
+/* Título principal: rosa fuerte, negrita, con sombra negra brillante */
+#index-banner h1.header {
+  color: #c2185b; /* rosa fucsia oscuro */
+  font-weight: 800; /* negrita marcada */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6),
+               0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Subtítulo: cursiva tipo carta, azul intenso, negrita, con sombra negra */
+#index-banner h5.header {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700 !important;
+  color: #ffffff; /* blanco */
+  text-shadow: 0 2px 4px rgba(13, 71, 161, 0.6),
+               0 6px 12px rgba(13, 71, 161, 0.45);
+}
+
+/* Ajuste de contraste (-9%) y brillo (-10%) para Picture 4 */
+.parallax img[src="Picture 4.jpg"] {
+  filter: contrast(0.96) brightness(0.75);
+}
